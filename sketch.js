@@ -51,8 +51,10 @@ block30 = new block(650,270,30,40)
 block31 = new block(680,270,30,40)
 //layer4
 block32 = new block(650,230,30,40)
-polygon = new block(200,150,15,20)
+polygon = new Ground(200,150,15,20)
+Matter.Body.setStatic(polygon.body,false)
 chain1 = new Sling({x:200,y:100},polygon.body)
+
 
 
  
@@ -60,6 +62,8 @@ chain1 = new Sling({x:200,y:100},polygon.body)
 function draw (){
     Matter.Engine.update(engine);  
      background("black")
+     textSize(25)
+     text("drag the polygon to destroy the boxes",400,80)
      base1.display()
   block1.display()
   block2.display()

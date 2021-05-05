@@ -14,8 +14,8 @@ class block extends BaseClass{
             push();
             this.visibility=this.visibility-5;
             tint(255,this.visibility);
-            //imageMode(CENTER)
-           //image(this.image,this.body.position.x,this.body.position.y,30,30)
+            imageMode(CENTER)
+           image(this.image,this.body.position.x,this.body.position.y,30,30)
             pop()
 
         }

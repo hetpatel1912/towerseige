@@ -22,10 +22,11 @@ class BaseClass{
         
         translate(this.body.position.x,this.body.position.y)
         rotate(this.body.angle)
-
+    //     rectMode(CENTER)
+    //    rect(0,0,this.width,this.height)
         fill("yellow")
-      //imageMode(CENTER)
-       //image(this.image,this.body.position.x,this.body.position.y,30,30);
+      imageMode(CENTER)
+    image(this.image,0,0,30,40);
         pop()
 
 
